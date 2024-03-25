@@ -1,9 +1,14 @@
+<a href="/">Home</a> |
+<a href="/stud">Student</a> |
+<a href="/faculty">Faculty</a> ||||
+<a routerLink= "/faculty">Faculty</a>
 <h1>Hello, {{ title }}</h1>
 <h1 style="color: green;">Home page</h1>
 
 {{person.name}}{{person.age}}
 
-<app-student></app-student>
-<app-student></app-student>
-<app-student></app-student>
 <app-employee [emp]="employee"></app-employee>
+
+<button (click) = "changeComponent()">Go to Faculty</button>
+
+<router-outlet></router-outlet>

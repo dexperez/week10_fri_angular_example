@@ -1,0 +1,12 @@
+<p>users works!</p>
+
+
+<button (click)='getUserData()'>GET User</button>
+
+@for(user of userList; track $index){
+    <p>{{ user | json }}</p>
+}@empty{
+    <p>No user data</p>
+}
+
+    
